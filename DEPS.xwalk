@@ -50,7 +50,7 @@ solutions = [
       'src':
         crosswalk_git + '/chromium-crosswalk.git@' + chromium_crosswalk_rev,
       'src/third_party/WebKit':
-        crosswalk_git + '/blink-crosswalk.git@' + blink_crosswalk_rev,
+        'https://github.com/kurli' + '/blink-crosswalk.git@' + '5da5e2af2ab90a68ebafae61b1d5127c5cac0cf1',
       'src/v8':
         crosswalk_git + '/v8-crosswalk.git@' + v8_crosswalk_rev,
 
