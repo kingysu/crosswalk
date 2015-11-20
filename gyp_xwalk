@@ -337,7 +337,7 @@ if __name__ == '__main__':
   if gyp_vars_dict.get('OS') != 'android' and sys.platform not in ('darwin',):
     args.append('-Duse_aura=1')
 
-  print '--------' + gyp_vars_dict.get('OS') + '-----------'
+  print '--------' + gyp_vars_dict + '-----------'
   
   if gyp_vars_dict.get('OS') == 'android':
     args.append('-Dnotifications=1')
