@@ -337,7 +337,8 @@ if __name__ == '__main__':
   if gyp_vars_dict.get('OS') != 'android' and sys.platform not in ('darwin',):
     args.append('-Duse_aura=1')
 
-  #if gyp_vars_dict.get('OS') == 'android':
+  print gyp_vars_dict.get('OS')
+  if gyp_vars_dict.get('OS') == 'android':
     args.append('-Dnotifications=1')
     args.append('-Drelease_unwind_tables=0')
     # Enable flags for crosswalk mini by default
