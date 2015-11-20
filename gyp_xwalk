@@ -340,7 +340,7 @@ if __name__ == '__main__':
   print '-------------------'
   print gyp_vars_dict
   
-  #if gyp_vars_dict.get('OS') == 'android':
+  if gyp_vars_dict.get('OS') == 'android':
     print '---------344------------'
     args.append('-Dnotifications=1')
     args.append('-Drelease_unwind_tables=0')
